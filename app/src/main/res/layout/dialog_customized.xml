@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dialog_round_corner"
+    android:orientation="vertical"
+    android:padding="@dimen/spacing_small">
+
+    <include
+        layout="@layout/view_dialog_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <include
+        android:id="@+id/editbox_view"
+        layout="@layout/view_dialog_editbox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/spacing_small"
+        android:layout_marginRight="@dimen/spacing_small"
+        android:layout_marginTop="@dimen/font_x_small"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:id="@+id/actionOneBtn"
+            android:textAllCaps="true"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="6dp"
+            android:layout_toLeftOf="@+id/actionThreeBtn"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:padding="@dimen/spacing_small"
+            android:textColor="#80000000"
+            android:textSize="@dimen/font_small"
+            android:visibility="visible"
+            tools:text="Button one" />
+
+        <TextView
+            android:id="@+id/actionTwoBtn"
+            android:textAllCaps="true"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="@dimen/font_small"
+            android:background="@color/colorPrimary"
+            android:textColor="#FFFFFF"
+            android:padding="@dimen/spacing_small"
+            android:visibility="gone"
+            tools:text="Button two" />
+
+        <TextView
+            android:id="@+id/actionThreeBtn"
+            android:textAllCaps="true"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_gravity="center"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:padding="@dimen/spacing_small"
+            android:textColor="@color/colorPrimary"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:textSize="@dimen/font_small"
+            android:visibility="visible"
+            tools:text="Button three" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Android-Arch-Mvp</string>
+    <string name="no_internet_connection">No Internet Connection</string>
+    <string name="message_error_date_is_already_passed">Date is already passed</string>
+</resources>

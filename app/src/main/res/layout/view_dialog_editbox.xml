@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="horizontal">
+
+    <EditText
+        android:id="@+id/dialog_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="@dimen/spacing_small"
+        android:layout_marginRight="@dimen/spacing_small"
+        android:gravity="center_vertical"
+        android:maxLength="6"
+        android:imeOptions="actionDone"
+        android:inputType="number"
+        android:paddingLeft="@dimen/spacing_small"
+        android:maxLines="1"
+        android:textSize="@dimen/font_medium" />
+
+    <com.urvesh.android_arch_mvp.components.LoadingProgressView
+        android:id="@+id/dialog_progressbar"
+        android:layout_width="@dimen/design_tabhost_height"
+        android:layout_height="@dimen/design_tabhost_height"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="@dimen/spacing_normal"
+        android:layout_marginRight="@dimen/spacing_normal"
+        android:layout_marginTop="@dimen/spacing_normal"
+        android:paddingBottom="@dimen/spacing_extra_small"
+        android:visibility="gone" />
+
+</RelativeLayout>
